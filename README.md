@@ -18,13 +18,25 @@ Para este proyecto se utilizo la libereria de Laravel, esta, se encarga de agili
 
 
 ## Pasos requeridos para montar la app en un entorno
+### Pasos que realizó para montar la aplicación para en un entorno de desarrollo y prueba:
+1. Instalar un entorno de desarrollo(xampp, wamp, lamp, laragon).
+2. Correr los servicios de apache y mysql de los servicios.
+3. Descargar el proyecto del github y moverlo a la carpeta de htdocs, o la respectiva carpeta de su entorno.
+4. Descargar e instalar Composer.
+5. Instalar dentro de la carpeta, por medio de la terminar, laravel, con el comando: composer global require "laravel/installer".
+7. Dentro del proyecto correr el comando composer update.
+8. Conectarse a la base de datos con el env.
+9. Servir el proyecto con el comando: php artisan serve.
+10. realizar la migraciónes y seeder con el comando: php artisan migrate --seed
+11. Descargar Postman.
+12. Testear cada ruta con Postman. **NOTA HEADER: ACCEPT : APLICACTION/JSON**
 
 
 
 ## Estructura del proyecto
 ### La estructura es:
 
-- **/app:** Es donde se localiza nuestra aplicación, Dentro de app, encontrar varias carpetas pero, la mas importante son **/Models** y **Http/Controllers**, En model estara el modelo de nuestra aplicación y en controller estara los controladores de nuestra aplicación.
+- **/app:** Es donde se localiza nuestra aplicación, Dentro de app, encontrar varias carpetas pero, la mas importante son **/Models** y **/Http/Controllers**, En model estara el modelo de nuestra aplicación y en controller estara los controladores de nuestra aplicación.
 - **/classes:** Es una carpeta creada para la creación de clases de ayuda.
 - **/docs:** Documentación del proyecto.
 - **/database:** En esta carpeta podremos realizar la migración del modelo en la base de datos y tambien seeder, que son datos de pruebas para la API.
