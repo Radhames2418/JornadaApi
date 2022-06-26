@@ -3,7 +3,7 @@
 
 | Method                           | HTTP request                             | Description                                                         |
 | -------------------------------- | ---------------------------------------- | ------------------------------------------------------------------- |
-| [**index**](jornadaAPI.md#jornadaAPITODOS)                      | **GET** /api/residentes                  | _Retorna Todos los registro_                                        |
+| [**index**](jornadaApi.md#jornadaAPITODOS)                      | **GET** /api/residentes                  | _Retorna Todos los registro_                                        |
 | [**show**]                       | **GET** /api/residentes/{residente}      | _Retorna un registro por ID_                                        |
 | [**store**]                      | **POST** /api/residentes                 | _Enviar un registro_                                                |
 | [**update**]                     | **PUT** /api/residentes/{residente}      | _Actualizar un registro en especifico_                              |
