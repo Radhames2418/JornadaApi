@@ -32,7 +32,7 @@ Todas las URL relativa al proyecto.
 | _APIController_ | [**show**](docs/jornadaApi.md#jornadaAPIUNO)                       | **GET** /api/residentes/{residente}      | _Retorna un registro por ID_                                        |
 | _APIController_ | [**store**](docs/jornadaApi.md#jornadaEnviar)                      | **POST** /api/residentes                 | _Enviar un registro_                                                |
 | _APIController_ | [**update**](docs/jornadaApi.md#jornadaActualizar)                     | **PUT** /api/residentes/{residente}      | _Actualizar un registro en especifico_                              |
-| _APIController_ | [**destroy**](docs/jornadaApi.md#jornadaEliminar)                    | **DELETE** /api/residentes/{residente}   | _Eliminar un registro especifico_                                   |
+| _APIController_ | [**destroy**](docs/jornadaApi.md#jornadaEliminar)               | **DELETE** /api/residentes/{residente}   | _Eliminar un registro especifico_                                   |
 | _APIController_ | [**name**](docs/jornadaApi.md#jornadaName)                       | **GET** /api/nombre/{nombre}             | _Retorna un/os registro/s por el nombre_                            |
 | _APIController_ | [**email**](docs/jornadaApi.md#jornadaEmail)                      | **GET** /api/correo/{correo}             | _Retorna un registro por el correo_                                 |
 | _APIController_ | [**filter**](docs/jornadaletra)                     | **GET** /api/letra/{letra}               | _Filtra un/os registro/s por la primera letra de su nombre_         |
