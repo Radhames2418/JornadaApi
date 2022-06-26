@@ -1,16 +1,17 @@
-# TrailersAppapi.TrailerDto
+# jornadaAPI.Residente
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | [optional] 
-**name** | **String** |  | [optional] 
-**coverSrc** | **String** |  | [optional] 
-**releaseYear** | **String** |  | [optional] 
-**duration** | **String** |  | [optional] 
-**catetgory** | [**Category**](Category.md) |  | [optional] 
-**descrioption** | **String** |  | [optional] 
-**url** | **String** |  | [optional] 
+**id** | **Number** |  | [Auto-incremetable] 
+**Nombre** | **Texto** |  | [Requerido] 
+**Apellidos ** | **Texto** |  | [Requerido] 
+**Teléfono ** | **Numérico** |  | [optional] 
+**Correo ** | **String** |  | [Requerido] 
+**Edad** | [**Numérico**] |  | [Requerido] 
+**Dirección ** | **Texto** |  | [optional] 
+**Comida Entregada** | **Si/No** |  | [optional] 
+**Observación ** | **Texto Largo** |  | [optional] 
 
 
 
