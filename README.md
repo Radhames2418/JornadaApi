@@ -16,21 +16,25 @@ Entre las funcionalidades de la API estan:
 Para este proyecto se utilizo la libereria de Laravel, esta, se encarga de agilizar en la **creación de modelos, controladores y rutas**, necesario para el funcionamiento de la API RestFull, ademas, utilizando sus herramienta para la **validación de campos requeridos**, **conexión a la base de datos**, **Migración de tabla** Y entre otras opciones, para agilizar la creación de la aplicación.
 
 
+
 ## Pasos requeridos para montar la app en un entorno
 
-## Estructura del proyecto
 
+
+## Estructura del proyecto
 ### La estructura es:
 
-- **/app:** es donde se localiza nuestra aplicación, Dentro de app, encontrar varias carpetas pero, la mas importante son **Model** y **Http/Controllers**, En model estara el modelo de nuestra aplicación y en controller estara los controladores de nuestra aplicación.
-- **/classes:** es una carpeta creada para la creación de clases de ayuda.
-- **/docs:** documentación del proyecto.
-- /database: en esta carpeta podremos realizar la migración del modelo en la base de datos y tambien seeder, que son datos de pruebas para la API.
-- /includes: es una carpeta creada para la creación de funciones de ayuda.
-- /routes: dentro de route, esta, el documento **api.php**, donde, se encontraran las rutas de la APIREST.
-- composer.json: dependencia de php.
-- package.json: dependencia de node.
-- bd_jornada.sql: base de datos exportada en lenguaje sql.
+- **/app:** Es donde se localiza nuestra aplicación, Dentro de app, encontrar varias carpetas pero, la mas importante son **Model** y **Http/Controllers**, En model estara el modelo de nuestra aplicación y en controller estara los controladores de nuestra aplicación.
+- **/classes:** Es una carpeta creada para la creación de clases de ayuda.
+- **/docs:** Documentación del proyecto.
+- **/database:** En esta carpeta podremos realizar la migración del modelo en la base de datos y tambien seeder, que son datos de pruebas para la API.
+- **/includes:** Es una carpeta creada para la creación de funciones de ayuda.
+- **/routes**: Dentro de route, esta, el documento **api.php**, donde, se encontraran las rutas de la APIREST.
+- **composer.json:** Dependencia de php.
+- **package.json:** Dependencia de node.
+- **bd_jornada.sql:** Base de datos exportada en lenguaje sql.
+
+
 
 ## URLs de acciones y como implementarlo de forma detallada.
 
