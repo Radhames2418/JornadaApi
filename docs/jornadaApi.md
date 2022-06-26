@@ -1,226 +1,53 @@
-# TrailersAppapi.TrailersApi
-
-All URIs are relative to */*
-
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiTrailersGetallGet**](TrailersApi.md#apiTrailersGetallGet) | **GET** /api/Trailers/getall | 
-[**apiTrailersIdGet**](TrailersApi.md#apiTrailersIdGet) | **GET** /api/Trailers/{id} | 
-[**createTrailer**](TrailersApi.md#createTrailer) | **POST** /api/Trailers | 
-[**deleteTrailer**](TrailersApi.md#deleteTrailer) | **DELETE** /api/Trailers/{id} | 
-[**updateTrailer**](TrailersApi.md#updateTrailer) | **PUT** /api/Trailers | 
-
-<a name="apiTrailersGetallGet"></a>
-# **apiTrailersGetallGet**
-> [TrailersListDto] apiTrailersGetallGet(opts)
+# jornadaApi
 
 
+| Method                           | HTTP request                             | Description                                                         |
+| -------------------------------- | ---------------------------------------- | ------------------------------------------------------------------- |
+| [**index**](jornadaAPI.md#jornadaAPITODOS)                      | **GET** /api/residentes                  | _Retorna Todos los registro_                                        |
+| [**show**]                       | **GET** /api/residentes/{residente}      | _Retorna un registro por ID_                                        |
+| [**store**]                      | **POST** /api/residentes                 | _Enviar un registro_                                                |
+| [**update**]                     | **PUT** /api/residentes/{residente}      | _Actualizar un registro en especifico_                              |
+| [**destroy**]                    | **DELETE** /api/residentes/{residente}   | _Eliminar un registro especifico_                                   |
+| [**name**]                       | **GET** /api/nombre/{nombre}             | _Retorna un/os registro/s por el nombre_                            |
+| [**email**]                      | **GET** /api/correo/{correo}             | _Retorna un registro por el correo_                                 |
+| [**filter**]                     | **GET** /api/letra/{letra}               | _Filtra un/os registro/s por la primera letra de su nombre_         |
+| [**down**]                       | **GET** /api/edad/{edad}                 | _Filtra un/os registro/s por su edad de mayor a menor_              |
+| [**paginado**]                   | **GET** /api/pagina/{pagina}             | _Retorna diez registro orginado desde el más reciente al más viejo_ |
 
-### Example
+
+<a name="jornadaAPITODOS"></a>
+# **jornadaAPITODOS**
+> [jornadaAPITODOS] Obtener Todos los registro
+
+### Ejemplo en javaScript
 ```javascript
-import {TrailersAppapi} from 'trailers_appapi';
-
-let apiInstance = new TrailersAppapi.TrailersApi();
-let opts = { 
-  'filters': "filters_example" // String | 
-};
-apiInstance.apiTrailersGetallGet(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
+async function consultarAPI() {
+  try {
+    const url = "http://127.0.0.1:8000/api/residentes/";
+    const resultado = await fetch(url);
+    const servicios = await resultado.json();
+    return servicios;
+  } catch (error) {
+    console.log(error);
   }
-});
+}
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filters** | **String**|  | [optional] 
+ **None** | **NONE**|  | [optional] 
 
 ### Return type
 
-[**[TrailersListDto]**](TrailersListDto.md)
+[**[Residente]**](Residente.md)
 
-### Authorization
+### Autorización
 
-No authorization required
+No autorización requirida
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-<a name="apiTrailersIdGet"></a>
-# **apiTrailersIdGet**
-> TrailerDto apiTrailersIdGet(id, opts)
-
-
-
-### Example
-```javascript
-import {TrailersAppapi} from 'trailers_appapi';
-
-let apiInstance = new TrailersAppapi.TrailersApi();
-let id = "id_example"; // String | 
-let opts = { 
-  'id': 56 // Number | 
-};
-apiInstance.apiTrailersIdGet(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **id** | **Number**|  | [optional] 
-
-### Return type
-
-[**TrailerDto**](TrailerDto.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="createTrailer"></a>
-# **createTrailer**
-> TrailerDto createTrailer(opts)
-
-
-
-### Example
-```javascript
-import {TrailersAppapi} from 'trailers_appapi';
-
-let apiInstance = new TrailersAppapi.TrailersApi();
-let opts = { 
-  'body': new TrailersAppapi.CreateTrailerDto() // CreateTrailerDto | 
-};
-apiInstance.createTrailer(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**CreateTrailerDto**](CreateTrailerDto.md)|  | [optional] 
-
-### Return type
-
-[**TrailerDto**](TrailerDto.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: application/json
-
-<a name="deleteTrailer"></a>
-# **deleteTrailer**
-> deleteTrailer(id, opts)
-
-
-
-### Example
-```javascript
-import {TrailersAppapi} from 'trailers_appapi';
-
-let apiInstance = new TrailersAppapi.TrailersApi();
-let id = "id_example"; // String | 
-let opts = { 
-  'id': 56 // Number | 
-};
-apiInstance.deleteTrailer(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **id** | **Number**|  | [optional] 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="updateTrailer"></a>
-# **updateTrailer**
-> updateTrailer(opts)
-
-
-
-### Example
-```javascript
-import {TrailersAppapi} from 'trailers_appapi';
-
-let apiInstance = new TrailersAppapi.TrailersApi();
-let opts = { 
-  'body': new TrailersAppapi.UpdateTrailerDto() // UpdateTrailerDto | 
-};
-apiInstance.updateTrailer(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**UpdateTrailerDto**](UpdateTrailerDto.md)|  | [optional] 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: application/json
-
