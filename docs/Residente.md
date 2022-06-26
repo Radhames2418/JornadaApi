@@ -1,7 +1,7 @@
 # jornadaAPI.Residente
 
-## Properties
-Name | Type | Description | Notes
+## Propiedades
+Nombre | Tipo | Descripción | Nota
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [Auto-incremetable] 
 **Nombre** | **Texto** |  | [Requerido] 
