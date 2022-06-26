@@ -18,7 +18,7 @@ Para este proyecto se utilizo la libereria de Laravel, esta, se encarga de agili
 
 
 ## Pasos requeridos para montar la app en un entorno
-### Pasos que realizó para montar la aplicación para en un entorno de desarrollo y prueba:
+### Pasos que realizó para montar la aplicación para un entorno de desarrollo y prueba:
 1. Instalar un entorno de desarrollo(xampp, wamp, lamp, laragon).
 2. Correr los servicios de apache y mysql de los servicios.
 3. Descargar el proyecto del github y moverlo a la carpeta de htdocs, o la respectiva carpeta de su entorno.
