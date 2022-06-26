@@ -20,6 +20,18 @@ Para este proyecto se utilizo la libereria de Laravel, esta, se encarga de agili
 
 ## Estructura del proyecto
 
+### La estructura es:
+
+- /app: es donde se localiza nuestra aplicación, Dentro de app, encontrar varias carpetas pero, la mas importante son **Model** y **Http/Controllers**, En model estara el modelo de nuestra aplicación y en controller estara los controladores de nuestra aplicación.
+- /classes: es una carpeta creada para la creación de clases de ayuda.
+- /docs: documentación del proyecto.
+- /database: en esta carpeta podremos realizar la migración del modelo en la base de datos y tambien seeder, que son datos de pruebas para la API.
+- /includes: es una carpeta creada para la creación de funciones de ayuda.
+- /routes: dentro de route, esta, el documento **api.php**, donde, se encontraran las rutas de la APIREST.
+- composer.jsom: dependencia de php.
+- package.json: dependencia de node.
+- bd_jornada.sql: base de datos exportada en lenguaje sql.
+
 ## URLs de acciones y como implementarlo de forma detallada.
 
 Todas las URL relativa al proyecto.
