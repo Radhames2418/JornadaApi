@@ -41,7 +41,7 @@ Todas las URL relativa al proyecto.
 
 ## Documentación del modelo
 
--   [JornadaAPI.Residente]
+-   [JornadaAPI.Residente](docs/Residente.md)
 
 
 
