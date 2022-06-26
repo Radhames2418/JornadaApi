@@ -4,7 +4,7 @@
 | Method                           | HTTP request                             | Description                                                         |
 | -------------------------------- | ---------------------------------------- | ------------------------------------------------------------------- |
 | [**index**](jornadaApi.md#jornadaAPITODOS)                      | **GET** /api/residentes                  | _Retorna Todos los registro_                                        |
-| [**show**]                       | **GET** /api/residentes/{residente}      | _Retorna un registro por ID_                                        |
+| [**show**](jornadaApi.md#jornadaAPIUNO)                       | **GET** /api/residentes/{residente}      | _Retorna un registro por ID_                                        |
 | [**store**]                      | **POST** /api/residentes                 | _Enviar un registro_                                                |
 | [**update**]                     | **PUT** /api/residentes/{residente}      | _Actualizar un registro en especifico_                              |
 | [**destroy**]                    | **DELETE** /api/residentes/{residente}   | _Eliminar un registro especifico_                                   |
@@ -19,7 +19,7 @@
 # **jornadaAPITODOS**
 > [jornadaAPITODOS] Obtener Todos los registro
 
-### Ejemplo en javaScript
+### Ejemplo en javaScript de como consumir
 ```javascript
 async function consultarAPI() {
   try {
@@ -51,3 +51,43 @@ No autorización requirida
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+<a name="jornadaAPIUNO"></a>
+# **jornadaAPIUNO**
+> [jornadaAPIUNO] Obtener un solo registro
+
+### Ejemplo en javaScript de como consumir
+```javascript
+async function consultarAPI() {
+  try {
+    const url = "http://127.0.0.1:8000/api/residentes/1";
+    const resultado = await fetch(url);
+    const servicios = await resultado.json();
+    return servicios;
+  } catch (error) {
+    console.log(error);
+  }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ID** | **number**|  | [optional] 
+
+### Return type
+
+[**[Residente]**](Residente.md)
+
+### Autorización
+
+No autorización requirida
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
