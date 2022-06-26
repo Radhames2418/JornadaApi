@@ -28,16 +28,16 @@ Todas las URL relativa al proyecto.
 
 | Class           | Method                           | HTTP request                             | Description                                                         |
 | --------------- | -------------------------------- | ---------------------------------------- | ------------------------------------------------------------------- |
-| _APIController_ | [**index**]                      | **GET** /api/residentes                  | _Retorna Todos los registro_                                        |
-| _APIController_ | [**show**]                       | **GET** /api/residentes/{residente}      | _Retorna un registro por ID_                                        |
-| _APIController_ | [**store**]                      | **POST** /api/residentes                 | _Enviar un registro_                                                |
-| _APIController_ | [**update**]                     | **PUT** /api/residentes/{residente}      | _Actualizar un registro en especifico_                              |
-| _APIController_ | [**destroy**]                    | **DELETE** /api/residentes/{residente}   | _Eliminar un registro especifico_                                   |
-| _APIController_ | [**name**]                       | **GET** /api/nombre/{nombre}             | _Retorna un/os registro/s por el nombre_                            |
-| _APIController_ | [**email**]                      | **GET** /api/correo/{correo}             | _Retorna un registro por el correo_                                 |
-| _APIController_ | [**filter**]                     | **GET** /api/letra/{letra}               | _Filtra un/os registro/s por la primera letra de su nombre_         |
-| _APIController_ | [**down**]                       | **GET** /api/edad/{edad}                 | _Filtra un/os registro/s por su edad de mayor a menor_              |
-| _APIController_ | [**paginado**]                   | **GET** /api/pagina/{pagina}             | _Retorna diez registro orginado desde el más reciente al más viejo_ |
+| _APIController_ | [**index**](docs/jornadaApi.md#jornadaAPITODOS)                      | **GET** /api/residentes                  | _Retorna Todos los registro_                                        |
+| _APIController_ | [**show**](docs/jornadaApi.md#jornadaAPIUNO)                       | **GET** /api/residentes/{residente}      | _Retorna un registro por ID_                                        |
+| _APIController_ | [**store**](docs/jornadaApi.md#jornadaEnviar)                      | **POST** /api/residentes                 | _Enviar un registro_                                                |
+| _APIController_ | [**update**](docs/jornadaApi.md#jornadaActualizar)                     | **PUT** /api/residentes/{residente}      | _Actualizar un registro en especifico_                              |
+| _APIController_ | [**destroy**](docs/jornadaApi.md#jornadaEliminar)                    | **DELETE** /api/residentes/{residente}   | _Eliminar un registro especifico_                                   |
+| _APIController_ | [**name**](docs/jornadaApi.md#jornadaName)                       | **GET** /api/nombre/{nombre}             | _Retorna un/os registro/s por el nombre_                            |
+| _APIController_ | [**email**](docs/jornadaApi.md#jornadaEmail)                      | **GET** /api/correo/{correo}             | _Retorna un registro por el correo_                                 |
+| _APIController_ | [**filter**](docs/jornadaletra)                     | **GET** /api/letra/{letra}               | _Filtra un/os registro/s por la primera letra de su nombre_         |
+| _APIController_ | [**down**](docs/jornadaApi.md#jornadaedad)                       | **GET** /api/edad/{edad}                 | _Filtra un/os registro/s por su edad de mayor a menor_              |
+| _APIController_ | [**paginado**](docs/jornadaApi.md#jornadapagina)                   | **GET** /api/pagina/{pagina}             | _Retorna diez registro orginado desde el más reciente al más viejo_ |
 
 ## Documentación del modelo
 
